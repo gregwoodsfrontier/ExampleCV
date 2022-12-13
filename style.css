@@ -1,0 +1,36 @@
+@page { size: A4 }
+
+.wrapper {
+  display: grid;
+  border: 1px solid red;
+  justify-content: center;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "name summary"
+    "contact summary"
+}
+
+.name {
+  grid-area: name;
+  align-self: top;
+  border: 1px solid black;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.summary {
+  grid-area: summary;
+  padding: 10px
+}
+
+/* #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: red;
+  margin-top: 60px;
+} */
